@@ -1,0 +1,28 @@
+﻿<link rel="stylesheet" href="~/css/CompleteAppointement.css" />
+<div class="main_page col-12">
+    <div class="main_form col-10">
+        <h3 class="main_form_title col-12">Complete Appointement With @Model.Name</h3>
+        <form action="/Doctor/AddBooking" class="book_reserve col-12">
+            <input type="hidden" name="doctor_id" value="@Model.Id" />
+            <label class="p_reserve col-12" for="date_reserve_1">Patient Name:</label>
+            <input type="text" id="date_reserve_1" name="patient_name" required />
+            <label class="p_reserve col-12" for="date_reserve_2">Appointement Date:</label>
+            <input type="date" id="date_reserve_2" name="date" required />
+            <label class="p_reserve col-12" for="date_reserve_3">Appointement Time:</label>
+            <input type="time" id="date_reserve_3" name="time" required />
+            <button type="submit" class="btn btn-primary btn_book">Complete Appointement</button>
+        </form>
+    </div>
+</div>
+<div class="completed_page_not col-12">
+    <div class="comp_msg">
+        <div class="upper_msg col-12">
+            <p class="left_upper">Appointement Completed</p>
+            <p class="right_upper">x</p>
+        </div>
+        <div class="middle_msg col-12"></div>
+        <div class="lower_msg col-12">
+            <p class="p_lower_msg">Your appointement has been successfully completed. Thank you!</p>
+        </div>
+    </div>
+</div>

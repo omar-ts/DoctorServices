@@ -1,0 +1,23 @@
+﻿.main_page_app {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2rem;
+}
+
+.table_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+table {
+    border: solid 1px black;
+    background-color: #fbfbfb;
+}

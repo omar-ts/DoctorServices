@@ -1,0 +1,41 @@
+﻿nav {
+    display: none !important;
+}
+
+footer {
+    display: none !important;
+}
+
+.success_page {
+    height: 100vh;
+    background-color: #000000c7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sucees_content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 3px;
+}
+
+.p_success {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.i_success {
+    font-size: 4rem;
+    color: #0a560a;
+}

@@ -1,0 +1,19 @@
+﻿<link rel="stylesheet" href="~/css/Booking.css" />
+<div class="main_page col-12">
+    <div class="page_details col-10">
+        <h4 class="h1_page_details col-12">Book Appointement</h4>
+        <div class="doctors_arena col-12">
+            @foreach (var item in Model)
+            {
+                <div class="doctor_details">
+                    <div class="doc_img col-12" style="background-image: url('@Url.Content("~/Images/" + item.Img)');"></div>
+                    <div class="doc_lower_details col-12">
+                        <h6 class="doc_name">@item.Name</h6>
+                        <p class="doc_spec">Specialization: @item.Specialization</p>
+                        <a href="/Doctor/CompleteAppointement/@item.Id" class="doc_Appoint">Book Appointement</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
